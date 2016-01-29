@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load staticfiles %}
+	<meta charset="UTF-8">
+	<title>{%block title%}{%endblock%}</title>
+	<link rel="stylesheet" type="text/css" href="{% static "citas/css/bootstrap.min.css" %}" media="screen" />
+	<link rel="stylesheet" type="text/css" href="{% static "citas/css/login.css" %}" media="screen" />
+</head>
+<body>
+	
+{% block content %}{% endblock %} 
+
+
+
+<script src="{% static "citas/js/jquery-1.12.0.min.js" %}"></script>
+<script src="{% static "citas/js/bootstrap.min.js" %}"></script>
+</body>
+</html>

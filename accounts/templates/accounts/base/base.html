@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load staticfiles %}
+	<meta charset="UTF-8">
+	<title>{%block title%}{%endblock%}</title>
+	<link rel="stylesheet" type="text/css" href="{% static "citas/css/bootstrap.min.css" %}" media="screen" />
+	<link rel="stylesheet" type="text/css" href="{% static "citas/css/style.css" %}" media="screen" />
+</head>
+<body>
+
+<section class="container">
+	<header class="row">
+		<div class="col-lg-12">
+	{%block logo%}{%endblock%}
+
+			<ul class="nav nav-pills pull-right">
+				<li>
+					<a href="#">
+						<i class="glyphicon glyphicon-user"></i>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="glyphicon glyphicon-log-out"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-lg-12">
+			<ul class="nav nav-tabs">
+				<li>
+					<a href="#">
+						Inicio
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Reservas
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Pacientes
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Médicos
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</header>
+
+  {% block content %}{% endblock %} 
+
+
+
+</section>
+
+	
+
+
+
+ <footer class="footer">
+      <div class="container">
+        <p class="text-muted">tlzSySteM 2016. Todos los derechos reservados </p>
+      </div>
+    </footer>
+
+<script src="{% static "citas/js/jquery-1.12.0.min.js" %}"></script>
+<script src="{% static "citas/js/bootstrap.min.js" %}"></script>
+</body>
+</html>
